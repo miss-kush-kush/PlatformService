@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(opt=>
-    opt.UseInMemoryDatabase("SuperHeroDb"));
+    opt.UseInMemoryDatabase("RAMDB"));
 
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
